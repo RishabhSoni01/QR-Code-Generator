@@ -8,12 +8,40 @@
     <title>QR Code</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #4f73ac;
+                color: #33333300;
+                display:flex;
+                text-align: center;
+                justify-items: auto;
+                margin-top: 280px;
+            }
+    
+            h1 {
+                color: #000000;
+                font-weight: bold;
+               
+            }
+            form{
+                display:inline-block;
+                box-shadow: #000000;
+            }
+            .btn{
+                background-color: tomato;
+                color: #000000;
+                font-weight: bold;
+            }
+        </style>
 </head>
 
 <body>
     <div class="container">
 
         <img src=<%=qr_code %> alt="QR Code">
+        <br>
         <br>
         <a href="/" role="button" class="btn btn-primary">Back</a>
     </div>
